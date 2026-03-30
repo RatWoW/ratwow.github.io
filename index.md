@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-
 # Keira3 NPC Tutorial
 https://www.azerothcore.org/Keira3/
 
