@@ -91,6 +91,8 @@ ii. Add new row, paste the GUID
 
 iii. In game, type the ```.gps``` command while you're standing exactly where you want your NPC. This will give you the information for mapid, zoneid, areaid, positions, and orientation
 
+![.gps command demo](images/
+
 ### Notes
 - Make sure you don't have any NPC selected when using the command, as it will give you their position instead of yours
 - Use X, Y, and Z, **not** ZoneX, ZoneY, or Ground Z
