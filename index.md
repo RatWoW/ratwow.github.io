@@ -51,6 +51,8 @@ The easiest way to get a specific model's ID is to find them in game
 
 i. Click on an NPC, and use the command ```.npc info```. This will list everything about them, including displayid
 
+![.npc info demo](images/npcinfodemo.png)
+
 ii. Click "Add New Row" to add the displayid to your template
   
 The model should appear in the viewer at the bottom. Click Execute
@@ -101,6 +103,8 @@ iii. In game, type the ```.gps``` command while you're standing exactly where yo
 iv. Click Execute. Now restart your worldserver
 
 The process is complete, and you now have a new friendly NPC to populate the world
+
+![working npc](images/npcworking.png)
 
 
  
