@@ -3,3 +3,5 @@ plugins:
   - jekyll-remote-theme
 title: Keira3 NPC Tutorial
 description: Learn how to make your first NPC
+include:
+  - style.css
