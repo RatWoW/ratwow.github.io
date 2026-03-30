@@ -1,5 +1,5 @@
-remote_theme: sirius93/cayman-theme-custom
+remote_theme: liamg/jekyll-theme-abysm
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
 title: Keira3 NPC Tutorial
 description: Learn how to make your first NPC
