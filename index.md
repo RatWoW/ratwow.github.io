@@ -6,7 +6,7 @@ This guide walks through making a basic friendly NPC with Keira3, including assi
 
 
 ## Before you begin... 
-Ensure Keira3 is connected to the correct database. If you created a new ssh tunnel after initial setup, you may need to update the port
+Ensure Keira3 is connected to the correct database. If you created a new ssh tunnel after initial setup, you may need to update the port.
 Log out of Keira3 and log back in to ensure the connection is active. If your database ever disconnects, Keira3 won't be able to push changes until you do
 
 ## Step 1: Creating a creature template 
