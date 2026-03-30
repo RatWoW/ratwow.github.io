@@ -61,7 +61,7 @@ This is simpler than it looks. For our purpose, most fields go unused
 
 i. Click add row
 
-  *General tab*
+ ### *General tab*
 
 ii. In "Event", scroll down to "64 - GOSSIP_HELLO". This refers to when the "gossip" menu is opened
 
@@ -69,7 +69,7 @@ iii. In "Action" select "5 - PLAY_EMOTE"
 
 iv. In "Target" select "1 - SELF"
 
-  *Action tab*
+ ### *Action tab*
 
 This is where you can select which emote the NPC plays. 
 
