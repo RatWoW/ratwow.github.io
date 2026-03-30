@@ -49,7 +49,7 @@ Click on "Template Model"
 The important field here is "CreatureDisplayId". It directly translates to an existing NPC model
 The easiest way to get a specific model's ID is to find them in game
 
-i. Click on an NPC, and use the command ```.npc info.``` This will list everything about them, including displayid
+i. Click on an NPC, and use the command ```.npc info```. This will list everything about them, including displayid
 
 ii. Click "Add New Row" to add the displayid to your template
   
