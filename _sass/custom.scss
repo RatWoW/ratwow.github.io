@@ -1,3 +1,14 @@
+@import "abysm";
+
 h1, h2, h3, h4, h5, h6 {
-    color: #ffcc00;
+  color: #ffcc00 !important;  
+}
+
+a {
+  color: #00ffff !important;
+}
+
+pre, code {
+  background-color: #222222 !important;
+  color: #ff99cc !important;
 }
