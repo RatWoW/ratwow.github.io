@@ -79,7 +79,7 @@ There is a list of EmoteIds here. Pick one
 
 Click Execute
 
-
+```markdown id="t6wsv9"
 ## Step 4: GUID and spawning your NPC
 
 What is a GUID? Every spawned creature has a unique GUID, that is assigned to each instance of it. A creature won't spawn if it has the same GUID as another
@@ -91,7 +91,7 @@ ii. Add new row, paste the GUID
 
 iii. In game, type the `.gps` command while you're standing exactly where you want your NPC. This will give you the information for mapid, zoneid, areaid, positions, and orientation
 
-*notes*
+### Notes
 - Make sure you don't have any NPC selected when using the command, as it will give you their position instead of yours
 - Use X, Y, and Z, **not** ZoneX, ZoneY, or Ground Z
 - If the yellow is hard to read, you can right click "General" > Settings > Other and change the colour of "System Messages"
