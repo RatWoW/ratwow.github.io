@@ -85,11 +85,13 @@ Click Execute
 What is a guid? Every spawned creature has a unique guid, that is assigned to each instance of the creature. A creature won't spawn if it has the same guid as another.
 At the bottom of all of the Keira3 menus, there is an "unused guid finder". Click "Search" and copy one. 
 
-i. Now move to the "Spawn" tab, another "Creature" submenu
+i. Now move to the "Spawn" tab
 
 ii. Add new row, paste the guid
 
-iii. 
+iii. Open the "..." menu next to Maps. Click search. I'll select 1, for Kalimdor
+
+iv. 
 
 
  
