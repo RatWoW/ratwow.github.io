@@ -49,7 +49,7 @@ Click on "Template Model"
 The important field here is "CreatureDisplayId". It directly translates to an existing NPC model
 The easiest way to get a specific model's ID is to find them in game
 
-i. Click on an NPC, and use the command `.npc info.` This will list everything about them, including displayid
+i. Click on an NPC, and use the command ```.npc info.``` This will list everything about them, including displayid
 
 ii. Click "Add New Row" to add the displayid to your template
   
@@ -79,7 +79,7 @@ There is a list of EmoteIds here. Pick one
 
 Click Execute
 
-```markdown id="t6wsv9"
+
 ## Step 4: GUID and spawning your NPC
 
 What is a GUID? Every spawned creature has a unique GUID, that is assigned to each instance of it. A creature won't spawn if it has the same GUID as another
@@ -89,7 +89,7 @@ i. Now move to the "Spawn" tab
 
 ii. Add new row, paste the GUID
 
-iii. In game, type the `.gps` command while you're standing exactly where you want your NPC. This will give you the information for mapid, zoneid, areaid, positions, and orientation
+iii. In game, type the ```.gps``` command while you're standing exactly where you want your NPC. This will give you the information for mapid, zoneid, areaid, positions, and orientation
 
 ### Notes
 - Make sure you don't have any NPC selected when using the command, as it will give you their position instead of yours
