@@ -6,11 +6,11 @@ This guide walks through making a basic friendly NPC with Keira3, including assi
 
 
 ## Before you begin... 
-Ensure Keira3 is connected to the correct database. If you created a new ssh tunnel after initial setup, you may need to update the port.
+Ensure Keira3 is connected to the correct database. If you created a new ssh tunnel after initial setup, you may need to update the port
 Log out of Keira3 and log back in to ensure the connection is active. If your database ever disconnects, Keira3 won't be able to push changes until you do
 
 ## Step 1: Creating a creature template 
-In this guide, I will only list steps for necessary fields. At the end, I'll provide a cheatsheet for what each field actually means
+  In this guide, only necessary fields will be used. Later, a cheatsheet will be provided for what each field actually means
 
 i. Open the Creature dropdown menu, and click Select Creature
   
@@ -24,32 +24,32 @@ v. Set both the minlevel and maxlevel to the level you wish your NPC to be
   
 vi. Set "expansion" to Wrath of the Lich King (Not entirely necessary, just most simple)
   
-vii. Next to "faction", press the "..." icon. In the "faction name" section, type your desired faction. In my case, it will be Darnassus, which will show me the ID is 79
-  Faction determines what the npc is friendly or hostile to. 35 is the ID for a "friendly to all" npc.
+vii. Next to "faction", press the "..." icon. In the "faction name" section, type your desired faction, E.G Darnassus (79), or Orgrimmar (29)
+  Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC
   
-viii. Open the "npcflag" menu, and enable "GOSSIP", so the npc can be interacted with. Not necessary for non-interactable npcs
+viii. Open the "npcflag" menu, and enable "GOSSIP", so the NPC can be interacted with. Not necessary for non-interactable NPCs
   
-ix. Move to "unit flags". I turned on IMMUNE_TO_PC, so nobody can kill our NPC
+ix. Move to "unit flags". Enable IMMUNE_TO_PC, so no player characters can attack the NPC (Optional)
  
 x. Under flags_extra, enable the "civilian" flag, to reduce aggro range
  
-xi. In behaviour, under AIName, select SmartAI. This will be used to make the npc emote when you talk to it. We'll configure this later
+xi. In behaviour, under AIName, select SmartAI. This will be used to make the NPC emote when you talk to it. We'll configure this later
 
 xii. Set gossip_menu_id to 140. This ID links to the basic "greetings" message
   
 xiii. Scroll back up to the top and press "Execute". You should get a success notification in the top right
 
 **Now you have a custom creature template.
-Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created.**
+Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created**
 
 
 ## Step 2: Giving your NPC a model
 
-Look 2 list items down to "Template Model".
-The important field here is "CreatureDisplayId". It directly translates to an existing NPC model.
-The easiest way to get a specific models ID is to find them in game, and 
+Click on "Template Model"
+The important field here is "CreatureDisplayId". It directly translates to an existing NPC model
+The easiest way to get a specific model's ID is to find them in game
 
-i. Use the command .npc info. This will list everything about them, including displayid.
+i. Click on an NPC, and use the command .npc info. This will list everything about them, including displayid
 
 ii. Click "Add New Row" to add the displayid to your template
   
@@ -57,7 +57,7 @@ The model should appear in the viewer at the bottom. Click Execute
 
 
 ## Step 3: Using SmartAI to make the NPC use an emote when interacted with
-This is simpler than it looks. For our purpose, most fields go unused.
+This is simpler than it looks. For our purpose, most fields go unused
 
 i. Click add row
 
@@ -75,23 +75,30 @@ This is where you can select which emote the NPC plays.
 
 https://www.azerothcore.org/wiki/emotes
 
-There is a list of EmoteIds here. I will use 1, to have them "talk".
+There is a list of EmoteIds here. Pick one
 
 Click Execute
 
 
-## Step 4: guid and spawning your NPC
+## Step 4: GUID and spawning your NPC
 
-What is a guid? Every spawned creature has a unique guid, that is assigned to each instance of the creature. A creature won't spawn if it has the same guid as another.
-At the bottom of all of the Keira3 menus, there is an "unused guid finder". Click "Search" and copy one. 
+What is a GUID? Every spawned creature has a unique GUID, that is assigned to each instance of it. A creature won't spawn if it has the same GUID as another
+At the bottom of all of the Keira3 menus, there is an "unused GUIDs" finder. Click "Search" and copy one
 
 i. Now move to the "Spawn" tab
 
-ii. Add new row, paste the guid
+ii. Add new row, paste the GUID
 
-iii. Open the "..." menu next to Maps. Click search. I'll select 1, for Kalimdor
+iii. In game, type the .gps command while you're standing exactly where you want your NPC. This will give you the information for mapid, zoneid, areaid, positions, and orientation
 
-iv. 
+*notes*
+- Make sure you don't have any NPC selected when using the command, as it will give you their position instead of yours
+- Use X, Y, and Z, **not** ZoneX, ZoneY, or Ground Z
+- If the yellow is hard to read, you can right click "General" > Settings > Other and change the colour of "System Messages"
+
+iv. Click Execute. Now restart your worldserver
+
+The process is complete, and you now have a new friendly NPC to populate the world
 
 
  
