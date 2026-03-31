@@ -25,9 +25,23 @@ sidebar: mydoc_sidebar
 | `.reload creature_template [#id]` | Reload the NPCs template | Will apply executed changes to the creature_template |  
 
 
+## Quick references
+
+**Faction IDs**:  
+Friendly: `35`  
+Hostile: `14` (Monster)  
+Neutral: `7`    
+
+**Map IDs**:  
+Eastern Kingdoms: `0`  
+Kalimdor: `1`  
+Outland: `530`  
+Northrend: `571`  
+
+
 ## Helpful link collection 
 
-[Npc flag checker, for use with the .npc info command(https://www.azerothcore.org/flag-checker/){:target="_blank"}  
+[Npc flag checker, for use with the .npc info command](https://www.azerothcore.org/flag-checker){:target="_blank"}  
 
 [List of Emote ids](https://www.azerothcore.org/wiki/emotes){:target="_blank"}  
 
