@@ -9,7 +9,7 @@ h3 {color: #ED1951; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #248ec2;
+    background-color: #065a84;
     color: white;
 }
 
@@ -118,4 +118,22 @@ li.sidebarTitle {
 
 .navbar-inverse .navbar-toggle {
     border-color: #015CAE;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(234, 212, 71);
+}
+
+
+p {
+    color: rgb(221, 221, 221);
 }

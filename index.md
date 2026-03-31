@@ -3,7 +3,7 @@ layout: default
 title: Keira3 Tutorial
 ---
 # Keira3 NPC Tutorial
-https://www.azerothcore.org/Keira3/
+[Install Keira3 here](https://www.azerothcore.org/Keira3/){:target="_blank"}
 
 ## Overview 
 This guide walks through making a basic friendly NPC with Keira3, including assigning values, giving it a model, a gossip interaction, and spawning it in game
