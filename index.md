@@ -20,16 +20,18 @@ Log out of Keira3 and log back in to ensure the connection is active every once 
   In this guide, only necessary fields will be used. Later, a cheatsheet will be provided for what each field actually means
 
 1. Open the Creature dropdown menu, and click **Select Creature**
-  
-1. Under "Create New" click "**Select**". You should be moved to the "Creature Template" tab.S
-  *The default number `9000000` is the unique ID for your creature. This will be how it's referred to in the database.*
 
+   &nbsp;  
+1. Under "Create New" click "**Select**". You should be moved to the "Creature Template" tab.  
+	  &bull; *The default number `9000000` is the unique ID for your creature. This will be how it's referred to in the database.*
+ 
+     &nbsp;
 1. Enter a name for your NPC  
-	  *-This will appear in game.*
+	  &bull; *This will appear in game.*
 
     &nbsp;  
 1. Click **IconName**, and scroll down to the chat bubble icon
-	  *-This will appear on mouseover.*
+	  &bull; *This will appear on mouseover.*
  
     &nbsp;  
 1. Set both the minlevel and maxlevel to the level you wish your NPC to be
@@ -40,12 +42,12 @@ Log out of Keira3 and log back in to ensure the connection is active every once 
    &nbsp;  
 1. Next to "**Faction**", press the "..." icon. In the "faction name" section, type your desired faction,  
    E.G Darnassus (`79`), or Orgrimmar (`29`)  
-	  *-Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC.*
+	  &bull; *Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC.*
 
    &nbsp;  
 1. Open the "**npcflag**" menu, and enable `GOSSIP`, so the NPC can be interacted with. 
 
-	  *- Not necessary for non-interactable NPCs*
+	  &bull; *Not necessary for non-interactable NPCs*
 
    &nbsp;  
 1. Move to "**unit flags**". Enable `IMMUNE_TO_PC`, so no player characters can attack the NPC (Optional)
@@ -55,15 +57,15 @@ Log out of Keira3 and log back in to ensure the connection is active every once 
 
    &nbsp; 
 1. In behaviour, under **AIName**, select `SmartAI`  
-	  *- This will be used to make the NPC emote when you talk to it. We'll configure this later*
+	   &bull; *This will be used to make the NPC emote when you talk to it. We'll configure this later*
 
    &nbsp;
 1. Set **gossip_menu_id** to `140`  
-	  *-This ID links to the basic "greetings" message*
+	  &bull; *This ID links to the basic "greetings" message*
 
    &nbsp;  
 1. Scroll back up to the top and press "Execute"  
-	  *-You should get a success notification in the top right*
+	  &bull; *You should get a success notification in the top right*
 
    &nbsp;
 Now you have a custom creature template.  
@@ -90,14 +92,14 @@ This is simpler than it looks. For our purpose, most fields go unused
 
 1. Click add row
 
- ### General tab
+### General tab
 
-2. In "**Event**", scroll down to `64 - GOSSIP_HELLO`
+1. In "**Event**", scroll down to `64 - GOSSIP_HELLO`
   >This refers to when the "gossip" menu is opened
 
-3. In "**Action**" select `5 - PLAY_EMOTE`
+1. In "**Action**" select `5 - PLAY_EMOTE`
 
-4. In "**Target**" select `1 - SELF`
+1. In "**Target**" select `1 - SELF`
 
 ### Action tab
 
