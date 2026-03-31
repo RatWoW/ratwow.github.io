@@ -1,7 +1,5 @@
 # Keira3 NPC Tutorial
 
-[View this tutorial with colour here](ratwow.github.io)
-
 Keira3 requires AzerothCore and a database manager.  
 [Make your own AzerothCore server here](https://www.azerothcore.org/wiki/home)
 
