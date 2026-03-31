@@ -234,13 +234,13 @@ th {
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
-    *,
+    /* *,
     :after,
     :before {
         /*color:#000!important;*/
         /*background:0 0!important*/
-        ;
-    }
+        
+    /* } */ 
     a,
     a:visited {
         text-decoration: underline
@@ -1900,8 +1900,8 @@ samp {
 code {
     padding: 2px 4px;
     font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
+    color: #000000;
+    background-color: #9cf7ff;
     border-radius: 4px
 }
 

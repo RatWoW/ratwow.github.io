@@ -6,7 +6,9 @@ title: Keira3 Tutorial
 [Install Keira3 here](https://www.azerothcore.org/Keira3/){:target="_blank"}
 
 ## Overview 
-This guide walks through making a basic friendly NPC with Keira3, including assigning values, giving it a model, a gossip interaction, and spawning it in game
+This guide walks through making a basic friendly NPC with Keira3, including assigning values, giving it a model, a gossip interaction, and spawning it in game  
+
+![Software flowchart](images/keira3flow.png)
 
 
 ## Before you begin... 
@@ -19,31 +21,31 @@ Log out of Keira3 and log back in to ensure the connection is active every once 
 
 i. Open the Creature dropdown menu, and click **Select Creature**
   
-ii. Under "Create New" click **"Select"**. You should be moved to the "Creature Template" tab.
+ii. Under "Create New" click "**Select**". You should be moved to the "Creature Template" tab.
   > The default number `9000000` is the unique ID for your creature. This will be how it's referred to in the database.
 
 iii. Enter a name for your NPC
   > This will appear in game.  
   
-iv. Click IconName, and scroll down to the chat bubble icon
+iv. Click **IconName**, and scroll down to the chat bubble icon
 This will appear on mouseover.
   
 v. Set both the minlevel and maxlevel to the level you wish your NPC to be
   
-vi. Set "expansion" to Wrath of the Lich King (Not entirely necessary, just most simple)
+vi. Set "**Expansion**" to Wrath of the Lich King (Not entirely necessary, just most simple)
   
-vii. Next to "faction", press the "..." icon. In the "faction name" section, type your desired faction, `E.G Darnassus (79), or Orgrimmar (29)`
+vii. Next to "**Faction**", press the "..." icon. In the "faction name" section, type your desired faction, `E.G Darnassus (79), or Orgrimmar (29)`
   > Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC.
   
-viii. Open the "npcflag" menu, and enable "GOSSIP", so the NPC can be interacted with. 
+viii. Open the "**npcflag**" menu, and enable `GOSSIP`, so the NPC can be interacted with. 
 
-Not necessary for non-interactable NPCs
+  >Not necessary for non-interactable NPCs
   
 ix. Move to "**unit flags**". Enable `IMMUNE_TO_PC`, so no player characters can attack the NPC (Optional)
  
 x. Under **flags_extra**, enable the "civilian" flag, to reduce aggro range
  
-xi. In behaviour, under AIName, select SmartAI
+xi. In behaviour, under **AIName**, select `SmartAI`
   >This will be used to make the NPC emote when you talk to it. We'll configure this later
 
 xii. Set **gossip_menu_id** to `140`
@@ -52,14 +54,14 @@ xii. Set **gossip_menu_id** to `140`
 xiii. Scroll back up to the top and press "Execute"
   >You should get a success notification in the top right
 
-**Now you have a custom creature template.
-Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created.**
+Now you have a custom creature template.  
+Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created.
 
 
 ## Step 2: Giving your NPC a model
 
 Click on "Template Model"
-The important field here is "CreatureDisplayId". It directly translates to an existing NPC model
+The important field here is "**CreatureDisplayId**". It directly translates to an existing NPC model
 The easiest way to get a specific model's ID is to find them in game
 
 i. Click on an NPC, and use the command ```.npc info```. This will list everything about them, including displayid
@@ -78,19 +80,20 @@ i. Click add row
 
 ### General tab
 
-ii. In "Event", scroll down to "64 - GOSSIP_HELLO". This refers to when the "gossip" menu is opened
+ii. In "**Event**", scroll down to `64 - GOSSIP_HELLO`
+  >This refers to when the "gossip" menu is opened
 
-iii. In "Action" select "5 - PLAY_EMOTE"
+iii. In "**Action**" select `5 - PLAY_EMOTE`
 
-iv. In "Target" select "1 - SELF"
+iv. In "**Target**" select `1 - SELF`
 
 ### Action tab
 
 This is where you can select which emote the NPC plays. 
 
-https://www.azerothcore.org/wiki/emotes
+(https://www.azerothcore.org/wiki/emotes)
 
-There is a list of EmoteIds here. Pick one
+There is a list of EmoteIds here. Pick one.
 
 Click Execute
 
