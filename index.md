@@ -4,7 +4,7 @@ title: Keira3 Tutorial
 ---
 # Keira3 NPC Tutorial
 Keira3 requires AzerothCore and a database manager.  
-[Make your own AzerothCore server here](https://www.azerothcore.org/wiki/home)
+[Make your own AzerothCore server here](https://www.azerothcore.org/wiki/home){:target="_blank"}
 
 [Install Keira3 here](https://www.azerothcore.org/Keira3/){:target="_blank"}
 
@@ -14,7 +14,7 @@ This guide walks through making a basic friendly NPC with Keira3, including assi
 ![Software flowchart](images/keira3flow.png)
 
 
-## Before you begin... 
+## Before you begin... (Important!) 
 Ensure Keira3 is connected to the correct database. If you changed the database's port after initial setup, you may need to update it in the Keira3 login menu. Keira3 will *not* tell you if you're in the wrong database. 
 
 Log out of Keira3 and log back in to ensure the connection is active every once and a while. If your database ever disconnects, Keira3 won't be able to push changes until you do.
@@ -80,7 +80,7 @@ Click the "creature template" tab on the left again, and a new array of menus wi
 ## Giving your NPC a model
 
 Click on the "**Template Model**" tab.  
-The important field here is "**CreatureDisplayId**". It directly translates to an existing NPC model
+The important field here is "**CreatureDisplayId**". It directly translates to an existing NPC model.  
 The easiest way to get a specific model's ID is to find them in game
 
    	&nbsp;
