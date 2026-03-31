@@ -813,6 +813,18 @@ span.red {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #000000;
+    background-color: #9cf7ff;
+    border-radius: 4px
+}
+
+li {
+    color: rgb(221, 221, 221);
+}
+
 h3.codeExplanation {
     font-size:18px;
     font-style:normal;
