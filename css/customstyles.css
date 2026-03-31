@@ -816,13 +816,60 @@ span.red {
 code {
     padding: 2px 4px;
     font-size: 90%;
-    color: #000000;
-    background-color: #9cf7ff;
+    background-color: #162a2e !important;
+    color: #40e0d0 !important;
     border-radius: 4px
+}
+
+/* Base table color */
+table th {
+  background-color: #3d3522 !important; /* Dark Gold/Brass */
+  color: rgb(234, 212, 71) !important;           /* Bright Gold Text */
+  border: 1px solid #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 2. The Rows: Alternating Dark Greys (No more blinding white) */
+table tr:nth-child(even) {
+  background-color: #252525 !important; /* Dark Grey */
+}
+
+table tr:nth-child(odd) {
+  background-color: #1e1e1e !important; /* Slightly Darker Grey */
+}
+
+/* 3. The Text: Off-white for better readability */
+table td {
+  color: #d1d1d1 !important; 
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+/* 4. The Commands: Your signature Cyan/Blue */
+table td code {
+  background-color: #162a2e !important; /* Dark Cyan tint */
+  color: #40e0d0 !important;           /* Turquoise/Cyan */
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* 5. Highlighting Importance */
+table td strong {
+  color: rgb(234, 212, 71)!important; /* Gold for emphasis */
+}
+
+
+strong {
+    color: #f0f8b4;
 }
 
 li {
     color: rgb(221, 221, 221);
+}
+
+li::marker {
+    color:#01aaff;
 }
 
 h3.codeExplanation {
