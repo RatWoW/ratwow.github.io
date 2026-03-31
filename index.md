@@ -39,18 +39,21 @@ viii. Open the "npcflag" menu, and enable "GOSSIP", so the NPC can be interacted
 
 Not necessary for non-interactable NPCs
   
-ix. Move to "unit flags". Enable IMMUNE_TO_PC, so no player characters can attack the NPC (Optional)
+ix. Move to "**unit flags**". Enable `IMMUNE_TO_PC`, so no player characters can attack the NPC (Optional)
  
-x. Under flags_extra, enable the "civilian" flag, to reduce aggro range
+x. Under **flags_extra**, enable the "civilian" flag, to reduce aggro range
  
-xi. In behaviour, under AIName, select SmartAI. This will be used to make the NPC emote when you talk to it. We'll configure this later
+xi. In behaviour, under AIName, select SmartAI
+  >This will be used to make the NPC emote when you talk to it. We'll configure this later
 
-xii. Set **gossip_menu_id** to 140. This ID links to the basic "greetings" message
+xii. Set **gossip_menu_id** to `140`
+  >This ID links to the basic "greetings" message
   
-xiii. Scroll back up to the top and press "Execute". You should get a success notification in the top right
+xiii. Scroll back up to the top and press "Execute"
+  >You should get a success notification in the top right
 
 **Now you have a custom creature template.
-Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created**
+Click the "creature template" tab on the left again, and a new array of menus will pop up, dedicated to editing the "creature" you just created.**
 
 
 ## Step 2: Giving your NPC a model
