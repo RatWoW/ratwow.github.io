@@ -138,10 +138,6 @@ The process is complete, and you now have a new friendly NPC to populate the wor
 
 ![working npc](images/npcworking.png)
 
-### Step 1: Creating a creature template
-
-In this guide, only necessary fields will be used. Later, a cheatsheet will be provided for what each field actually means
-
 
 
  
