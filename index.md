@@ -46,7 +46,7 @@ Log out of Keira3 and log back in to ensure the connection is active every once 
    &nbsp;  
 1. Next to "**Faction**", press the "..." icon. In the "faction name" section, type your desired faction,  
    E.G Darnassus (`79`), or Orgrimmar (`29`)  
-	  &bull; *Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC.*
+	  &bull; *Faction determines what the NPC is friendly or hostile to. 35 is the ID for a "friendly to all" NPC. 14 is the ID for a "hostile" npc.*
 
    &nbsp;  
 1. Open the "**npcflag**" menu, and enable `GOSSIP` so the NPC can be interacted with 

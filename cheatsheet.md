@@ -3,13 +3,11 @@ layout: default
 title: Cheatsheet
 sidebar: mydoc_sidebar
 ---
-#search-navblock { display: none !important; }
-.top-search { display: none !important; }
 
 # Cheatsheet and helpful links
 
 
-## A quickguide for useful commands and reference links.  
+## A quickguide for useful commands  
 
 | Command | Purpose | Explanation |
 | :--- | :--- | :--- |
